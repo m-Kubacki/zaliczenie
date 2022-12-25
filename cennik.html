@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.column:hover {
+  transform: scale(1.25); 
+}
+</style>
+<title>Cennik</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<p>MENU</p>
+			<div id="toggle" class="toggle"></div>
+			<div id="sidebar" class="sidebar">
+				<ul>
+					<li><a href="./index.html">Strona główna</a></li>
+					<li><a href="./cennik.html">Cennik</a></li>
+					<li><a href="./zespol.html">Zespół</a></li>
+					<li><a href="./kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+			<script>
+				const toggle = document.getElementById("toggle");
+				const sidebar = document.getElementById("sidebar");
+
+				toggle.onclick = function () {
+					toggle.classList.toggle("active");
+					sidebar.classList.toggle("active");
+				};
+			</script>
+		</nav>
+
+		<header></header>
+		<main class="main">
+			<br />
+			<section><h1>Cennik</h1></section>
+			<br />
+			<div class="row">
+				<div class="column">
+					<img src="https://global-uploads.webflow.com/6023a26d1bb77e2b2972605f/607046ad3a0f95296736b54c_Amirani_white_main.png"
+					width="400" height="400">
+					<p>699 zł</p>
+				</div>
+				<div class="column">
+					<img src="https://www.corsair.com/pl/pl/medias/sys_master/images/images/ha4/h6f/9822954651678/CC-9011219-CN/Gallery/7000D_AIRFLOW_WHITE_01/-CC-9011219-CN-Gallery-7000D-AIRFLOW-WHITE-01.png_515Wx515H"
+					width="400" height="400">
+					<p>499 zł</p>
+				</div>
+				<div class="column">
+					<img src="https://www.corsair.com/pl/pl/medias/sys_master/images/images/h57/h68/9659510358046/base-5000x/Gallery/5000X_RGB_WHITE_001/-base-5000x-Gallery-5000X-RGB-WHITE-001.png_515Wx515H" style="width:100%"
+					width="400" height="400">
+					<p>599 zł</p>
+				</div>
+				<div class="column">
+					<img src="https://www.corsair.com/pl/pl/medias/sys_master/images/images/h75/hac/9678445150238/base-5000d/Gallery/5000D_WHITE_01/-base-5000d-Gallery-5000D-WHITE-01.png_515Wx515H"
+					width="400" height="400">
+					<p>299 zł</p>
+				</div>
+			</div>
+				</p>
+			</section>
+		</main>
+		<footer class="footer">
+			<p>Strona stworzona na potrzeby projektu zaliczeniowego</p>
+		</footer>
+	</body>
+</html>
