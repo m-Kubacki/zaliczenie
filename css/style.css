@@ -180,3 +180,58 @@ h2 {
 	transform: scale(1.25);
 	transition: 0.5s;
 }
+.container {
+	width: 80%;
+	margin: 50px auto;
+}
+.contact-box {
+	background: #fff;
+	display: flex;
+}
+.contact-left {
+	flex-basis: 60%;
+	padding: 40px 60px;
+}
+.contact-right {
+	flex-basis: 40%;
+	padding: 40px;
+	background: #1c001c;
+	color: #fff;
+}
+.input-row .input-group {
+	flex-basis: 45%;
+}
+input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	padding-bottom: 5px;
+}
+textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 10px;
+}
+button{
+	background: cyan;
+	width: 100px;
+	border: none;
+	outline: none;
+	color: black;
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 20px;
+	box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-right h3 {
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+tr td:first-child{
+	padding-right: 20px;
+}
+tr td{
+	padding-top: 20px;
+}
