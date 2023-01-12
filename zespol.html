@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Zespół</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<p>MENU</p>
+			<div id="toggle" class="toggle"></div>
+			<div id="sidebar" class="sidebar">
+				<ul>
+					<li><a href="./index.html">Strona główna</a></li>
+					<li><a href="./cennik.html">Cennik</a></li>
+					<li><a href="./zespol.html">Zespół</a></li>
+					<li><a href="./kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+			<script>
+				const toggle = document.getElementById("toggle");
+				const sidebar = document.getElementById("sidebar");
+
+				toggle.onclick = function () {
+					toggle.classList.toggle("active");
+					sidebar.classList.toggle("active");
+				};
+			</script>
+		</nav>
+		<main class="main">
+			<br />
+			<section>
+				<h1>Zespół</h1>
+			</section>
+			<br />
+			<section class="wrapper">
+				<h2>Dawid Morawa</h2>
+				<p class="about-us">
+					Technik Teleinformatyk, Główny Administrator Sieci Komputerowych w
+					"Grupie R".
+				</p>
+			</section>
+			<section class="wrapper">
+				<h2>Michał Kubacki</h2>
+				<p class="about-us">
+					Technik Informatyk, CEO "Grupy R" i Edytor Naczelny Strony
+					Internetowej. Odpowiada za wygląd oraz funkcjonalność naszej strony.
+				</p>
+			</section>
+			<section class="wrapper">
+				<h2>Maksymilian Szewczyk</h2>
+				<p class="about-us">
+					Maksymilian Szewczyk to doświadczony inżynier oprogramowania, który
+					specjalizuje się w tworzeniu aplikacji mobilnych. Jest bardzo
+					zaangażowany w swoją pracę i często pracuje po godzinach, aby
+					doprowadzić projekty do końca. Posiada wiedzę z zakresu różnych
+					języków programowania, takich jak Java, Swift i C#.
+				</p>
+			</section>
+			<section class="wrapper">
+				<h2>Dominik Spytkowski</h2>
+				<p class="about-us">
+					Dominik Spytkowski jest specjalistą ds. sprzedaży i marketingu.
+					Zajmuje się promocją i sprzedażą produktów firmy oraz budowaniem
+					relacji z klientami. Jest bardzo komunikatywny i ma dobre umiejętności
+					negocjacyjne. Lubi pracować z ludźmi i jest zawsze gotów pomóc
+					klientom w rozwiązywaniu ich problemów.
+				</p>
+			</section>
+		</main>
+		<footer class="footer">
+			<p>Strona stworzona na potrzeby projektu zaliczeniowego</p>
+		</footer>
+	</body>
+</html>
