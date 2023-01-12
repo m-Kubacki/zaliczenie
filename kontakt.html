@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kontakt</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<p>MENU</p>
+			<div id="toggle" class="toggle"></div>
+			<div id="sidebar" class="sidebar">
+				<ul>
+					<li><a href="./index.html">Strona główna</a></li>
+					<li><a href="./cennik.html">Cennik</a></li>
+					<li><a href="./zespol.html">Zespół</a></li>
+					<li><a href="./kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+			<script>
+				const toggle = document.getElementById("toggle");
+				const sidebar = document.getElementById("sidebar");
+
+				toggle.onclick = function () {
+					toggle.classList.toggle("active");
+					sidebar.classList.toggle("active");
+				};
+			</script>
+		</nav>
+
+		<main class="main">
+			<br><section><h1>Kontakt</h1></section></br>
+			<div class="container">
+				<div class="contact-box">
+					<div class="contact-left">
+						<h3>Twoja Wiadomość</h3>
+						<form>
+							<div class="input-row">
+								<div class="input-group">
+									<label>Imię i nazwisko</label>
+									<input type="text" placeholder="Joe Mama" />
+								</div>
+								<div class="input-group">
+									<label>Numer telefonu</label>
+									<input type="text" placeholder="123 456 789" />
+								</div>
+							</div>
+							<div class="input-row">
+								<div class="input-group">
+									<label>E-mail</label>
+									<input type="text" placeholder="joemama_gone@gmail.com" />
+								</div>
+							</div>
+							<label>Wiadomość</label>
+							<textarea rows="5" placeholder="Twoja wiadomość"></textarea>
+
+							<button type="submit">WYŚLIJ</button>
+						</form>
+					</div>
+					<div class="contact-right">
+						<h3>Nasze Dane Kontaktowe</h3>
+
+						<table>
+							<tr>
+								<td>Email:</td>
+								<td>grupa_r@gmail.com</td>
+							</tr>
+							<tr>
+								<td>Telefon:</td>
+								<td>123 456 789</td>
+							</tr>
+							<tr>
+								<td>Adres:</td>
+								<td>Radom ul. Czarna 123a</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<p>Strona stworzona na potrzeby projektu zaliczeniowego</p>
+		</footer>
+	</body>
+</html>
